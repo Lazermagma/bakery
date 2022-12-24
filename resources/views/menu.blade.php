@@ -106,7 +106,7 @@
                         </div></header>
        {{-- ---------------End of navbar section----------------- --}}
 
-    <section style="background-color:rgb(51, 51, 51);">
+    <section style="background-color:rgb(25, 23, 23);">
        <div class="menu">
         <div class="heading">
             <h1>OUR</h1>
@@ -127,6 +127,11 @@
         
         @endforeach
     </section>
+                       {{-- footer section --}}
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6597"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1"> All rights reserved © 2022&nbsp; myBakery</p>
+      </div>
+    </footer>
     
 </body>
 </html>
