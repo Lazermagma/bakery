@@ -120,60 +120,14 @@
 
   
 
-    {{-- <section class="about-Description">
 
-<table>
-
-<tr>
-
-    
- 
-  <tr>
-
-    <td>
-      <img src = "images/angelo-pantazis-2-U0A2tNYhM-unsplash.jpg"  class="image-details"/></td>
-
-
-    <td>
-
-      <div class="header-style">
-        <h1> About Us </h1>
-        <h5> myBakrey Online Shop  </h5>
-      </div>
-      <div class="paragraph-style">
-        <p> Established in 2022, the bakery is an international bakery offering a wide range of bakery
-        products and creations made with premium quality ingredients. It has established a
-        reputable bakery system from a humble family business that produced a variety of wafers
-        and biscuits in North Sumatra, Medan, The bakery offers great improvement in bread and cake production with time, experience
-         and food technology improvement and is expanding into other major market i.e. bakery
-         and cake business in the capital of Indonesia, Jakarta.
-        </p>
-      </div>
-
-    </td>
-  </tr>
-  
-
-
-
-
-</table>
-
-
-
-
-
-     
-      
-      </section> --}}
 
       <style>
-
 
 .about{
 	width: 100%;
 	padding: 78px 0px;
-	background-color: #191919;
+	background-color: #101010;
 
 }
 .about img{
@@ -212,6 +166,9 @@
   
 }
 
+.about-text span{
+  color: #f9b700;
+}
 
 
 
@@ -224,7 +181,7 @@
         <div class = "main">
         <img src = "images/angelo-pantazis-2-U0A2tNYhM-unsplash.jpg"/>
         <div class = "about-text">
-        <h1> About Us </h1>
+        <h1> About <span>Us<span> </h1>
         <h5> Bakery Shop Online </h5> 
         <p> Established in 1990, the bakery is an international bakery offering a wide range of bakery 
         products and creations made with premium quality ingredients. It has established a 

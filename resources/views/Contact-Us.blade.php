@@ -107,9 +107,157 @@
     </div></header>
 
 {{-- ------------end of navbar------------ --}}
-    <section class="u-clearfix u-section-1" id="sec-489a">
-      <div class="u-clearfix u-sheet u-sheet-1"></div>
-    </section>
+
+{{-- body section --}}
+
+
+
+
+<style>
+
+section{
+	padding:  40px 15%;
+}
+.Contact{
+	background: #101010;
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+	align-items: center;
+	grid-gap: 6rems;
+}
+.Contact-img img{
+	max-width: 100%;
+	width: 720px;
+	height: auto;
+	border-radius: 10px;
+}
+.Contact-form h1{
+	font-size: 80px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+/* span{
+	color: #f9004d;
+} */
+.Contact-form p{
+	color: #c6c9d8bf;
+	letter-spacing: 1px;
+	line-height: 26px;
+	font-size: 1.2rem;
+	margin-bottom: 3.8rem;
+}
+
+.Contact-form span{
+  color: #f9b700; 
+}
+.Contact-form label{
+	color: #f9b700; 
+}
+.Contact-form form{
+	position: relative;
+}
+.Contact-form form input,
+form textarea{
+	width: 65%;
+	padding: 17px;
+	border: none;
+	outline: none;
+	background: #191919;
+	color: #fff;
+	font-size: 1.1rem;
+	margin-bottom: 0.7rem;
+	border-radius: 10px;
+}
+.Contact-form textarea{
+	resize: none;
+	height: 200px;
+}
+.Contact-form form .btn{
+	display: inline-black;
+	 background: #f9b700;
+	 font-size: 1.1rem;
+	 letter-spacing: 1px;
+	 text-transform: uppercase;
+	 font-weight: 600;
+	 border: 2px solid transparent;
+	 border-radius: 10px;
+	 width: 220px;
+	 transition: ease .20s;
+	 cursor: pointer;
+}		
+.Contact-form form .btn:hover{
+	border: 2px solid #f9b700;
+	background: transparent;
+	transform: scale(1.1);
+}
+@media (max-width: 1570px){
+	section{
+		padding: 80px 3%;
+		transition: .2s;
+	}
+	.Contact-form h1{
+		font-size: 60px;
+	}
+	.Contact-form p{
+		margin-bottom: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+	}
+}
+@media (max-width: 1000px){
+	.Contact{
+		grid-template-columns: 1fr;
+	}
+	.Contact-form {
+		order: 2;
+	}
+	.contact-img img{
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+</style>
+
+<section class="Contact">
+  <div class="Contact-form">
+  <h1> Contact <span> Us </span> </h1>
+  <p>
+  Customer feedback is the lifeblood of our business. Tell us what’s on your mind, good or bad. 
+  </p>
+  <p> We respond to all customer feedback and look forward to hearing from you!
+  Fields marked with an * are required
+  </p>
+  <form action="mailto:example@email.com" method="post" enctype="text/plain" >
+  <label> Name </label><br>
+  <input type="text" placeholder="Your Name" name="Sender Name"><br>
+  <label> E-Mail </label><br>
+  <input type="email" placeholder="Your E-Mail" name="Sender E-mail"><br>
+  <label> Message </label><br>
+  <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Massage">
+  </textarea><br>
+  <input type="submit" name="" value="Submit" class="btn">
+  </form>
+  </div>
+  <div class="Contact-img">
+  <img src="images/loginBakery.jpg">
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+{{-- footer section --}}
+  
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6597"><div class="u-clearfix u-sheet u-sheet-1">
