@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+
 
 class HomeController extends Controller
 {
     public function index(){
+        
         return view("home");
     }
 
@@ -24,7 +27,8 @@ class HomeController extends Controller
     }
 
     public function menu(){
-        return view("menu");
+        $data = Menu::all();
+        return view("menu",compact("data"));
     }
 
     //checks the user type whether he is an admin or regular user 
