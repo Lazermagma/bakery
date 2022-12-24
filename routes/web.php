@@ -43,4 +43,5 @@ Route::middleware([
 
 //admin routes
 Route::get('/users', [AdminController::class, "user"]);
+Route::get('/BakeryMenu', [AdminController::class, "BakeryMenu"]);
 Route::get('/deleteuser/{id}', [AdminController::class, "deleteuser"]);

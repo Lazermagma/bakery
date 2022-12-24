@@ -16,4 +16,9 @@ class AdminController extends Controller
       $data->delete();
         return redirect()->back();
    }
+
+   public function BakeryMenu(){
+      
+        return view("admin.BakeryMenu");
+   }
 }
