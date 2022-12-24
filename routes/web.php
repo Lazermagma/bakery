@@ -43,3 +43,4 @@ Route::middleware([
 
 //admin routes
 Route::get('/users', [AdminController::class, "user"]);
+Route::get('/deleteuser/{id}', [AdminController::class, "deleteuser"]);
