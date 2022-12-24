@@ -24,11 +24,33 @@
       </head>
       <body>
        
+           <style>
+           .table-info{
+
+            position:relative;
+            top:60px;
+            right:-150px
+
+
+           }
+           .table-style ,th ,td{
+            border: 3px solid;
+            color: pink;
+           
+            border-color:greenyellow;
+           }
+
+
+           </style>
+
+
+
+
         <div class="container-scroller">
     @include("admin.navbar")
     
-   <div style="position:relative; top:60px; right:-150px">
-        <table bgcolor="grey" border="3px">
+   <div class="table-info" >
+        <table class="table-style" >
             <tr>
                 <th style="padding:30px">Name</th>
                 <th style="padding:30px">E-mail</th>
