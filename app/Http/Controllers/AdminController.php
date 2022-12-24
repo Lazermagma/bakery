@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Menu;
 class AdminController extends Controller
 {
    public function user(){
@@ -21,4 +22,23 @@ class AdminController extends Controller
       
         return view("admin.BakeryMenu");
    }
+   public function upload(Request $request){
+
+      $data = new Menu;
+
+      $image = $request->image;
+      // will give every image in the database a unique name 
+      $imagename = time() . '.' . $image->getClientOriginalExtension();
+      // then set the image into a folder called menuImage 
+      $request->image->move('menuImage', $imagename);
+      $data->image = $imagename;
+
+      $data->title = $request->title;
+      $data->price = $request->price;
+      $data->description = $request->description;
+
+      $data->save();
+      return redirect()->back();
+        
+ }
 }

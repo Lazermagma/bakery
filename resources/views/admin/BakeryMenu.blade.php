@@ -111,7 +111,7 @@
 @include("admin.navbar")
 
    <div class="bakeryMenu-form">
-    <form action="" method="post"  enctype="" class="bakeryMenu">
+    <form action="{{url('/upload_BakeryMenu')}}" method="post"  enctype="multipart/form-data" class="bakeryMenu">
              
         @csrf
 
