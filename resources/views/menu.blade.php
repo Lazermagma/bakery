@@ -106,7 +106,7 @@
                         </div></header>
        {{-- ---------------End of navbar section----------------- --}}
 
-    
+    <section style="background-color:rgb(51, 51, 51);">
        <div class="menu">
         <div class="heading">
             <h1>OUR</h1>
@@ -126,7 +126,7 @@
         </div>
         
         @endforeach
-   
+    </section>
     
 </body>
 </html>
