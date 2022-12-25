@@ -115,103 +115,34 @@
 
 {{-- ---------body--------------- --}}
     
-<section id="blog">
-  <!--navigation----------------------------->
-  <div class="navigation">
-      <!--logo---------->
+
     
-      <div class="heading">
-        <h1>OUR</h1>
-        <h3>&mdash; Blog &mdash; </h3>
-    </div>
-    
-      <!--post-filter---------->
-      <nav>
-          <!--menu-icon------------->
-          <input type="checkbox" class="menu-btn" id="menu-btn">
-          <label for="menu-btn" class="menu-icon">
-              <span class="nav-icon"></span>
-          </label>
-          <!--filter--------->
-          <ul class="blog-filter">
-              <li class="list blog-filter-active" data-filter="all">All</li>
-              <li class="list" data-filter="Cake">Cake recipies </li>
-              <li class="list" data-filter="Drink">Drink recipies</li>
-              <li class="list" data-filter="new">New</li>
-          </ul>
-      </nav>
-  </div>
  
   <!--container------------------------------->
   
-      
- @foreach ($data as $data)
+  <section style="background-color:rgb(255, 255, 255);">
+    <div class="menu">
+     <div class="heading">
+         <h1>OUR</h1>
+         <h3>&mdash;Blog&mdash; </h3>
+     </div>
+     @foreach ($data as $data)
+     <div class="food-items">
+         <img src="blogImage/{{$data->image}}">
+         <div class="details">
+             <div class="details-sub">
+                 <h5>{{$data->title}}</h5>
+                 <h5 class="price"> {{$data->date }}</h5>
+             </div>
+             <p>{{$data->text}}</p>
+             <button class="btn">Read more</button>
+         </div>
+     </div>
      
- 
-  <div class="blog-container">
-      <!--box-1----------------------------------------------->
-      <div class="blog-box app">
-          <!--img----->
-          <div class="blog-img">
-              <img alt="img" src='blogImage/{{$data->image}}'>
-              <span class="category">{{$data->category}}</span> 
-          </div>
-          <!--text---->
-          <div class="blog-text">
-              <!--title------------------------>
+     @endforeach
+ </section>
 
-              <h3 style="font-weight: 900;">{{$data->title}}</h3>
-              <a href="article.html">
-                  <strong>{{$data->text}}</strong>
-              </a>
-              <!--time-and-category------------->
-              <div class="category-time">
-                  <span class="blog-category">{{$data->category}}</span>
-                  <span class="published-time">{{$data->date}}</span>
-              </div>
-             
-          </div>
-      </div>
-      
-  </div>
-  @endforeach
-  
-</section>
 
-<!--JQuery----------------------->
-<script type="text/javascript" src="js/jquery.js"></script>
-
-<!--script----------------------->
-<script type="text/javascript">
-
-  /*blog-filter-menu----------------------------*/
-  $(document).on('click','.blog-filter li',function(){
-      $(this).addClass('blog-filter-active').siblings().removeClass('blog-filter-active')
-  });
-  /*post-filter---------------------------------*/
-  $(document).ready(function(){
-      $('.list').click(function(){
-          const value = $(this).attr('data-filter');
-          if(value == 'all'){
-              $('.blog-box').show('1000');
-          }
-          else{
-              $('.blog-box').not('.'+value).hide('1000');
-              $('.blog-box').filter('.'+value).show('1000');
-          }
-      });
-  });
-
-  /*for-fix-filter-menu-----------------------------*/
-  $(window).scroll(function(){
-      if($(document).scrollTop() > 80){
-          $('nav').addClass('fix-nav');
-      }
-      else{
-          $('nav').removeClass('fix-nav');
-      }
-  });
-</script>
                                     {{-- -------------footer Start ----------- --}}
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6597"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1"> All rights reserved © 2022&nbsp; myBakery</p>
