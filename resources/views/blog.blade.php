@@ -162,11 +162,7 @@
                   <span class="blog-category">App Design</span>
                   <span class="published-time">11-03-2021</span>
               </div>
-              <!--publisher-profile------------->
-              <div class="publisher-profile">
-                  <img alt="Publisher" src="images/p-1.png">
-                  <span>Touseeq Ijaz</span>
-              </div>
+             
           </div>
       </div>
       

@@ -121,7 +121,7 @@
                     <h5 class="price"> {{$data->price }}</h5>
                 </div>
                 <p>{{$data->description}}</p>
-                <button>Add To Cart</button>
+                <button>Buy now</button>
             </div>
         </div>
         
