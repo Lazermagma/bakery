@@ -183,7 +183,7 @@
         <div class = "about-text">
         <h1> About <span>Us<span> </h1>
         <h5> Bakery Shop Online </h5> 
-        <p> Established in 1990, the bakery is an international bakery offering a wide range of bakery 
+        <p> Established in 2022, mybakery is an international bakery offering a wide range of bakery 
         products and creations made with premium quality ingredients. It has established a 
         reputable bakery system from a humble family business that produced a variety of wafers 
         and biscuits in North Sumatra, Medan, The bakery offers great improvement in bread and cake production with time, experience 
