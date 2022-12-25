@@ -209,7 +209,7 @@
 
                               {{-- --------button linking to menu page------------- --}}
 
-            <a href="https://nicepage.com/k/loans-website-templates" class="u-border-none u-btn u-button-style u-custom-color-2 u-custom-font u-font-merriweather u-hover-custom-color-3 u-btn-1">Menu</a>
+            <a href="/menu" class="u-border-none u-btn u-button-style u-custom-color-2 u-custom-font u-font-merriweather u-hover-custom-color-3 u-btn-1">Menu</a>
 
                                {{-- ------------------------------------------- --}}
 
