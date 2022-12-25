@@ -132,7 +132,7 @@
          <div class="details">
              <div class="details-sub">
                  <h5>{{$data->title}}</h5>
-                 <h5 class="price"> {{$data->date }}</h5>
+                 <h5 class="price"> {{$data->dates}}</h5>
              </div>
              <p>{{$data->text}}</p>
              <button class="btn">Read more</button>

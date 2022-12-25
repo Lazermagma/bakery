@@ -62,7 +62,7 @@ class AdminController extends Controller
      $data->title = $request->title;
      $data->text = $request->text;
      $data->category = $request->category;
-     $data->date = $request->date;
+     $data->dates = $request->dates;
     
 
      $data->save();
