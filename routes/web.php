@@ -28,7 +28,7 @@ Route::get('/About-Us', [HomeController::class, "about"]);
 // Contact us route 
 Route::get('/Contact-Us', [HomeController::class, "contact"]);
 //blog route 
-Route::get('/our-blog', [HomeController::class, "blog"]);
+Route::get('/our-blog', [HomeController::class, "blogs_data"]);
 // menu route 
 Route::get('/menu', [HomeController::class, "menu"]);
 Route::middleware([
@@ -47,3 +47,4 @@ Route::get('/Bakery-Menu', [AdminController::class, "BakeryMenu"]);
 Route::get('/deleteuser/{id}', [AdminController::class, "deleteuser"]);
 Route::post('/upload_BakeryMenu', [AdminController::class, "upload"]);
 Route::post('/upload_blog', [AdminController::class, "upload_blog"]);
+Route::get('/blog-admin', [AdminController::class, "blog_update"]);

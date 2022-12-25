@@ -43,6 +43,15 @@
           <span class="menu-title">Reservations</span>
         </a>
       </li>
+
+      <li class="nav-item menu-items">
+        <a class="nav-link" href="/blog-admin">
+          <span class="menu-icon">
+            <i class="mdi mdi-contacts"></i>
+          </span>
+          <span class="menu-title">Blogs</span>
+        </a>
+      </li>
       
           </span>
           

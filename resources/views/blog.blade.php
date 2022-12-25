@@ -143,30 +143,38 @@
   </div>
  
   <!--container------------------------------->
+  
+      
+ @foreach ($data as $data)
+     
+ 
   <div class="blog-container">
       <!--box-1----------------------------------------------->
       <div class="blog-box app">
           <!--img----->
           <div class="blog-img">
-              <img alt="img" src="images/b-1.jpg">
-              <span class="category">Cake</span>
+              <img alt="img" src='blogImage/{{$data->image}}'>
+              <span class="category">{{$data->category}}</span> 
           </div>
           <!--text---->
           <div class="blog-text">
               <!--title------------------------>
+
+              <h3 style="font-weight: 900;">{{$data->title}}</h3>
               <a href="article.html">
-                  <strong>How To Create Ramdan Time App Design</strong>
+                  <strong>{{$data->text}}</strong>
               </a>
               <!--time-and-category------------->
               <div class="category-time">
-                  <span class="blog-category">App Design</span>
-                  <span class="published-time">11-03-2021</span>
+                  <span class="blog-category">{{$data->category}}</span>
+                  <span class="published-time">{{$data->date}}</span>
               </div>
              
           </div>
       </div>
       
   </div>
+  @endforeach
   
 </section>
 

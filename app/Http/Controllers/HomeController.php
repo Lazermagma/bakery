@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\blog;
 use App\Models\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -29,6 +30,11 @@ class HomeController extends Controller
     public function menu(){
         $data = Menu::all();
         return view("menu",compact("data"));
+    }
+
+    public function blogs_data(){
+        $data = blog::all();
+        return view("blog",compact("data"));
     }
 
     //checks the user type whether he is an admin or regular user 

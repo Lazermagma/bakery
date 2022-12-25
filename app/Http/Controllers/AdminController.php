@@ -43,6 +43,11 @@ class AdminController extends Controller
         
  }
 
+ public function blog_update(){
+      
+     return view("admin.blog");
+}
+
  public function upload_blog(Request $request){
 
      $data = new blog;
