@@ -6,12 +6,14 @@
     <meta name="description" content="">
     <title>Blog </title>
     <link rel="stylesheet" href="../nicepage.css" media="screen">
-<link rel="stylesheet" href="../Blog-Template.css" media="screen">
+
+<link rel="stylesheet" href="blog/style.css">
     <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 5.1.5, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:400">
+
     
     
     <script type="application/ld+json">{
@@ -112,67 +114,100 @@
   
 
 {{-- ---------body--------------- --}}
-    <section class="">
     
-              <h4 class="">
-                <a class="">Post 6 Headline</a>
-              </h4>
-              <a class="u-post-header-link" href="../blog/post-5.html"><img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-1" src="../images/8ad73f3c.jpeg"></a><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-blog-control u-post-content u-text u-text-2 fr-view">Sample small text. Lorem ipsum dolor sit amet.</div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="../blog/post-5.html" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-1"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><!--blog_post_header-->
-              <h4 class="u-blog-control u-text u-text-3">
-                <a class="u-post-header-link" href="../blog/post-4.html">Post 5 Headline</a>
-              </h4><!--/blog_post_header--><!--blog_post_image-->
-              <a class="u-post-header-link" href="../blog/post-4.html"><img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-2" src="../images/68f64b9d.jpeg"></a><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-blog-control u-post-content u-text u-text-4 fr-view">Sample small text. Lorem ipsum dolor sit amet.</div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="../blog/post-4.html" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-2"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><!--blog_post_header-->
-              <h4 class="u-blog-control u-text u-text-5">
-                <a class="u-post-header-link" href="../blog/post-3.html">Post 4 Headline</a>
-              </h4><!--/blog_post_header--><!--blog_post_image-->
-              <a class="u-post-header-link" href="../blog/post-3.html"><img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-3" src="../images/0fd3416c.jpeg"></a><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-blog-control u-post-content u-text u-text-6 fr-view">Sample small text. Lorem ipsum dolor sit amet.</div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="../blog/post-3.html" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-3"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><div class="u-blog-post u-container-style u-repeater-item u-white u-repeater-item-1">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><!--blog_post_header-->
-              <h4 class="u-blog-control u-text u-text-1">
-                <a class="u-post-header-link" href="../blog/post-2.html">Post 3 Headline</a>
-              </h4><!--/blog_post_header--><!--blog_post_image-->
-              <a class="u-post-header-link" href="../blog/post-2.html"><img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-1" src="../images/8ad73f3c.jpeg"></a><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-blog-control u-post-content u-text u-text-2 fr-view">Sample small text. Lorem ipsum dolor sit amet.</div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="../blog/post-2.html" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-1"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><!--blog_post_header-->
-              <h4 class="u-blog-control u-text u-text-3">
-                <a class="u-post-header-link" href="../blog/post-1.html">Post 2 Headline</a>
-              </h4><!--/blog_post_header--><!--blog_post_image-->
-              <a class="u-post-header-link" href="../blog/post-1.html"><img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-2" src="../images/68f64b9d.jpeg"></a><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-blog-control u-post-content u-text u-text-4 fr-view">Sample small text. Lorem ipsum dolor sit amet.</div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="../blog/post-1.html" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-2"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><!--blog_post_header-->
-              <h4 class="u-blog-control u-text u-text-5">
-                <a class="u-post-header-link" href="../blog/post.html">Post 1 Headline</a>
-              </h4><!--/blog_post_header--><!--blog_post_image-->
-              <a class="u-post-header-link" href="../blog/post.html"><img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-3" src="../images/0fd3416c.jpeg"></a><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-blog-control u-post-content u-text u-text-6 fr-view">Sample small text. Lorem ipsum dolor sit amet.</div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="../blog/post.html" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-3"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><!--/blog_post--><!--blog_post-->
-          <!--/blog_post--><!--blog_post-->
-          <!--/blog_post-->
-        </div><!--/blog-->
+<section id="blog">
+  <!--navigation----------------------------->
+  <div class="navigation">
+      <!--logo---------->
+    
+      <div class="heading">
+        <h1>OUR</h1>
+        <h3>&mdash; Blog &mdash; </h3>
+    </div>
+    
+      <!--post-filter---------->
+      <nav>
+          <!--menu-icon------------->
+          <input type="checkbox" class="menu-btn" id="menu-btn">
+          <label for="menu-btn" class="menu-icon">
+              <span class="nav-icon"></span>
+          </label>
+          <!--filter--------->
+          <ul class="blog-filter">
+              <li class="list blog-filter-active" data-filter="all">All</li>
+              <li class="list" data-filter="Cake">Cake recipies </li>
+              <li class="list" data-filter="Drink">Drink recipies</li>
+              <li class="list" data-filter="new">New</li>
+          </ul>
+      </nav>
+  </div>
+ 
+  <!--container------------------------------->
+  <div class="blog-container">
+      <!--box-1----------------------------------------------->
+      <div class="blog-box app">
+          <!--img----->
+          <div class="blog-img">
+              <img alt="img" src="images/b-1.jpg">
+              <span class="category">Cake</span>
+          </div>
+          <!--text---->
+          <div class="blog-text">
+              <!--title------------------------>
+              <a href="article.html">
+                  <strong>How To Create Ramdan Time App Design</strong>
+              </a>
+              <!--time-and-category------------->
+              <div class="category-time">
+                  <span class="blog-category">App Design</span>
+                  <span class="published-time">11-03-2021</span>
+              </div>
+              <!--publisher-profile------------->
+              <div class="publisher-profile">
+                  <img alt="Publisher" src="images/p-1.png">
+                  <span>Touseeq Ijaz</span>
+              </div>
+          </div>
       </div>
-    </section>
-    
+      
+  </div>
+  
+</section>
+
+<!--JQuery----------------------->
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<!--script----------------------->
+<script type="text/javascript">
+
+  /*blog-filter-menu----------------------------*/
+  $(document).on('click','.blog-filter li',function(){
+      $(this).addClass('blog-filter-active').siblings().removeClass('blog-filter-active')
+  });
+  /*post-filter---------------------------------*/
+  $(document).ready(function(){
+      $('.list').click(function(){
+          const value = $(this).attr('data-filter');
+          if(value == 'all'){
+              $('.blog-box').show('1000');
+          }
+          else{
+              $('.blog-box').not('.'+value).hide('1000');
+              $('.blog-box').filter('.'+value).show('1000');
+          }
+      });
+  });
+
+  /*for-fix-filter-menu-----------------------------*/
+  $(window).scroll(function(){
+      if($(document).scrollTop() > 80){
+          $('nav').addClass('fix-nav');
+      }
+      else{
+          $('nav').removeClass('fix-nav');
+      }
+  });
+</script>
                                     {{-- -------------footer Start ----------- --}}
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6597"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1"> All rights reserved © 2022&nbsp; myBakery</p>
