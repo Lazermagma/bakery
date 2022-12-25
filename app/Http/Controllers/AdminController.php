@@ -20,8 +20,9 @@ class AdminController extends Controller
    }
 
    public function BakeryMenu(){
-      
-        return view("admin.BakeryMenu");
+
+      $data = Menu::all();
+      return view("admin.BakeryMenu",compact("data"));
    }
    public function upload(Request $request){
 
@@ -46,6 +47,36 @@ class AdminController extends Controller
  public function blog_update(){
       
      return view("admin.blog");
+}
+
+public function deleteMenu($id){
+          $data = Menu::find($id);
+          $data->delete();
+          return redirect()->back();
+}
+public function updateMenu($id){
+     $data = Menu::find($id);
+     
+     return view("admin.updateMenu",compact("data"));
+}
+
+public function update(Request $request ,$id){
+     $data = Menu::find($id);
+
+      $image = $request->image;
+      // will give every image in the database a unique name 
+      $imagename = time() . '.' . $image->getClientOriginalExtension();
+      // then set the image into a folder called menuImage 
+      $request->image->move('menuImage', $imagename);
+      $data->image = $imagename;
+
+      $data->title = $request->title;
+      $data->price = $request->price;
+      $data->description = $request->description;
+
+      $data->save();
+      return redirect()->back();
+        
 }
 
  public function upload_blog(Request $request){

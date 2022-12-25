@@ -6,14 +6,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   
+    {{-- to fix the css problem  --}}
+    <base href="/public"> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     @include("admin.admincss")
+     
   </head>
   <body>
-
-
+    
+   
     <style>
 
         section{
@@ -111,7 +113,7 @@
 @include("admin.navbar")
 
    <div class="bakeryMenu-form">
-    <form action="{{url('/upload_BakeryMenu')}}" method="post"  enctype="multipart/form-data" class="bakeryMenu">
+    <form action="{{url('/update',$data->id)}}" method="post"  enctype="multipart/form-data" class="bakeryMenu">
              
         @csrf
 
@@ -122,6 +124,11 @@
         <div>
             <label>Price</label>
             <input type="num" name="price" placeholder="Write price here" required>
+        </div>
+
+        <div>
+            <label>old Image</label>
+            <img src="menuImage/{{$data->image}}" style="width: 150px; height:150px;">
         </div>
         <div>
             <label>Image</label>
@@ -138,60 +145,8 @@
 
     </form>
    </div>
-                 {{-- table styling --}}
-   <style>
-    .table-info{
-
-     position:relative;
-     top:150px;
-    left: 20px;
-    width: 500px;
-
-
-    }
-    .table-style ,th ,td{
-     border: 3px solid;
-     color: pink;
-    
-     border-color:greenyellow;
-    }
-
-
-    </style>
-      
-      
-      {{-- end of table styling --}}
-
-
-      <div class="table-info">
-<table class="table-style">
-    
-    <tr>
-        <th style="padding:30px">title</th>
-        <th style="padding:30px">price</th>
-        <th style="padding:30px">image</th>
-        <th style="padding:30px">descritption</th>
-    </tr>
-
-    @foreach ( $data as $data )
-    
-
-    <tr align="center">
-        <td>{{$data->title}}</td>
-        <td>{{$data->price}}</td>
-        <td><img src="menuImage/{{$data->image}}" style="width: 100px; height: 100px;"></td>
-        <td>{{$data->description}}</td>
-        <td><a href="{{url('/deleteMenu',$data->id)}}">Delete</a></td>
-        <td><a href="{{url('/updateMenu',$data->id)}}">Update</a></td>
-        
-        
-       
-        
-    </tr>
-
-    @endforeach
-
-</table>
+                 
+   
 </div>
 
 

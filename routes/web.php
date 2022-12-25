@@ -48,3 +48,6 @@ Route::get('/deleteuser/{id}', [AdminController::class, "deleteuser"]);
 Route::post('/upload_BakeryMenu', [AdminController::class, "upload"]);
 Route::post('/upload_blog', [AdminController::class, "upload_blog"]);
 Route::get('/blog-admin', [AdminController::class, "blog_update"]);
+Route::get('/deleteMenu/{id}', [AdminController::class, "deleteMenu"]);
+Route::get('/updateMenu/{id}', [AdminController::class, "updateMenu"]);
+Route::post('/update/{id}', [AdminController::class, "update"]);
