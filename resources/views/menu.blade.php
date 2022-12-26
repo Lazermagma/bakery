@@ -48,7 +48,7 @@
                                      color: orange;
                                    }
                                    .cart-color{
-                                     font-weight: 500;
+                                     font-weight: 00;
                                    }
                         </style>
                         <table class="cart-color">

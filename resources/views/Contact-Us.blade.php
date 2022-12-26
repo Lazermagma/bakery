@@ -34,15 +34,26 @@
   </g></svg>
           </a>
         </div>
+
+
+        <style>
+
+          .navbar-space{
+            position: relative;
+             left:100px;
+          }
+        </style>
+        <div class="navbar-space">
         <div class="u-custom-menu u-nav-container">
-          <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"  style="position: relative; left:100"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" href="{{asset('home')}}" style="padding: 10px 8px;">Home</a>
+          
+          <ul class="u-nav u-spacing-30 u-unstyled u-nav-1" ><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" href="{{asset('home')}}" style="padding: 10px 8px;">Home</a>
   </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" href="{{asset('/About-Us')}}" style="padding: 10px 8px;">About Us</a>
   </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" href="{{asset('/menu')}}" style="padding: 10px 8px;">Menu</a>
   </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" href="{{asset('/our-blog')}}" style="padding: 10px 8px;">Blog</a>
   </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" href="{{asset('/Contact-Us')}}" style="padding: 10px 5px 10px 8px;">Contact Us</a>
   </li>
   <li class="u-nav-item" style="">
-                        
+    
 
     <style>
                .cart-color:hover{
@@ -61,7 +72,6 @@
     
 
   </li>
-  
   
   
   <li class="u-nav-item" > 
@@ -87,6 +97,7 @@
   
   </ul>
         </div>
+        
         <div class="u-custom-menu u-nav-container-collapse">
           <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
             <div class="u-inner-container-layout u-sidenav-overflow">
@@ -115,16 +126,18 @@
     @endif
   </li>
   </ul>
+ </div>
             </div>
           </div>
           <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
         </div>
       </nav>
-      <p class="u-text u-text-default u-text-1">
-        <span style="font-weight: 700;">myBakery</span>
-        
-        <span style="font-weight: 700;"></span>
-      </p>
+      
+        <p class="u-text u-text-default u-text-1">
+          <span style="font-weight: 700;">myBakery</span>
+          
+          <span style="font-weight: 700;"></span>
+        </p>
     </div></header>
 
 {{-- ------------end of navbar------------ --}}

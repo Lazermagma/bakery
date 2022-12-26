@@ -19,15 +19,22 @@ class HomeController extends Controller
     }
 
     public function about(){
-        return view("About-Us");
+        $user_id = Auth::id();
+        $count = Cart::where('user_id', $user_id)->count();
+        return view("About-Us",compact("count"));
     }
 
     public function contact(){
-        return view("Contact-Us");
+        $user_id = Auth::id();
+        $count = Cart::where('user_id', $user_id)->count();
+        return view("Contact-Us",compact("count"));
     }
 
     public function blog(){
-        return view("blog");
+        $user_id = Auth::id();
+        $count = Cart::where('user_id', $user_id)->count();
+        return view("blog",compact("count"));
+         
     }
 
     public function menu(){
@@ -39,7 +46,9 @@ class HomeController extends Controller
 
     public function blogs_data(){
         $data = blog::all();
-        return view("blog",compact("data"));
+        $user_id = Auth::id();
+        $count = Cart::where('user_id', $user_id)->count();
+        return view("blog",compact("data","count"));
     }
 
     //checks the user type whether he is an admin or regular user 
