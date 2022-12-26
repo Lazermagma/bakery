@@ -113,6 +113,9 @@
             <h3>&mdash; MENU &mdash; </h3>
         </div>
         @foreach ($data as $data)
+            
+        <form action="{{url('/addcart')}}" method="post">
+          @csrf
         <div class="food-items">
             <img src="menuimage/{{$data->image}}">
             <div class="details">
@@ -121,10 +124,18 @@
                     <h5 class="price"> {{$data->price }}</h5>
                 </div>
                 <p>{{$data->description}}</p>
-                <button class="btn1">Buy now</button>
+                
+                <table>
+                  <tr>
+                    <td><input type="number" name="quality" min="0" placeholder="Item qty." style="width:80px; height:30px"></td>
+                    <td><input type="submit" value="add to cart" class="btn1"></td>
+                  </tr>
+                </table>
+                
+                
             </div>
         </div>
-        
+      </form>
         @endforeach
     </section>
                        {{-- footer section --}}

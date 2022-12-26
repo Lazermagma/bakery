@@ -41,6 +41,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::post('/addcart', [HomeController::class, "addcart"]);
 //admin routes
 Route::get('/users', [AdminController::class, "user"]);
 Route::get('/Bakery-Menu', [AdminController::class, "BakeryMenu"]);
