@@ -191,7 +191,29 @@
           </p>
       </div></header>
        {{-- ---------------End of navbar section----------------- --}}
+<section>
+    <table align="center" bgcolor="beige" >
+    
+        <tr>
+            <th  style="padding: 30px;">Name</th>
+            <th style="padding: 30px;">Price</th>
+            <th style="padding: 30px;">Quantity</th>
+            <th style="padding: 30px;">Image</th>
+        </tr>
+    @foreach ($data as $data )
 
+    <tr>
+        <td style="padding: 30px;">{{$data->title}}</td>
+        <td style="padding: 30px;">{{$data->price}}</td>
+        <td style="padding: 30px;">{{$data->quantity}}</td>
+        <td style="padding: 30px; width:100px; height:100px;">
+            <img src="menuImage/{{$data->image}}">
+        </td>
+    </tr>
+        
+    @endforeach
+    </table>
+</section>
 
 
 
