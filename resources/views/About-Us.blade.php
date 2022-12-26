@@ -12,7 +12,7 @@
    
     <script class="u-script" type="text/javascript" src="{{asset('jquery.js')}}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{{asset('nicepage.js')}}" defer=""></script>
-    <meta name="generator" content="Nicepage 5.1.5, nicepage.com">
+    <meta name="generator" content="bakery shop">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:400">
     
