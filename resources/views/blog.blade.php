@@ -17,7 +17,6 @@
 
     
     
-  
     <script type="application/ld+json">{
       "@context": "http://schema.org",
       "@type": "Organization",
@@ -69,15 +68,17 @@
       <table class="cart-color">
         <tr> 
          <td><i class="fa-solid fa-cart-shopping" "></i></td>
-         <td><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" href="{{asset('/Contact-Us')}}" style="padding: 10px 5px 10px 8px; ">
+         <td>
            
-           @auth
-         
-           Cart[{{$count}}]
-           @endauth
-         @guest
-           Cart[0]
-         @endguest
+          @auth
+          <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" style="padding: 10px 5px 10px 8px;  " href="{{url('/showcart',Auth::user()->id)}}">
+            Cart[{{$count}}]
+           </a>
+            @endauth
+          @guest
+           <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" style="padding: 10px 5px 10px 8px;  "> Cart[0]</a>
+          @endguest
+          
          
          
          </a>
@@ -128,30 +129,34 @@
       
   
       <style>
-                 .cart-color:hover{
+                 .cart-color2:hover{
                    color: orange;
                  }
-                 .cart-color{
+                 .cart-color2{
                    font-weight: 500;
-                  
+                   color: white;
+                  position: relative;
+                  left: 10px;
+                  font-weight: 500;
                  }
                 
       </style>
-      <table class="cart-color">
+      <table class="cart-color2">
         <tr> 
          <td><i class="fa-solid fa-cart-shopping" "></i></td>
-         <td><a class="u-button-style u-nav-link" style="padding: 10px 5px 10px 8px;  ">
+         <td>
            
            @auth
-         
+         <a class="u-button-style u-nav-link" style="padding: 10px 5px 10px 8px;  " href="{{url('/showcart',Auth::user()->id)}}">
            Cart[{{$count}}]
+          </a>
            @endauth
          @guest
-           Cart[0]
+          <a class="u-button-style u-nav-link" style="padding: 10px 5px 10px 8px;  "> Cart[0]</a>
          @endguest
          
          
-         </a>
+         
          
          </td>
         </tr>
