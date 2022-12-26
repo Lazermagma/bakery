@@ -192,39 +192,10 @@
       </div></header>
        {{-- ---------------End of navbar section----------------- --}}
 
-    <section style="background-color:rgb(25, 23, 23);">
-       <div class="menu">
-        <div class="heading">
-            <h1>OUR</h1>
-            <h3>&mdash; MENU &mdash; </h3>
-        </div>
-        @foreach ($data as $data)
-            
-        <form action="{{url('/addcart',$data->id)}}" method="post">
-          @csrf
-        <div class="food-items">
-            <img src="menuimage/{{$data->image}}">
-            <div class="details">
-                <div class="details-sub">
-                    <h5>{{$data->title}}</h5>
-                    <h5 class="price"> {{$data->price }}</h5>
-                </div>
-                <p>{{$data->description}}</p>
-                
-                <table>
-                  <tr>
-                    <td><input type="number" name="quantity" min="1"  value="1" placeholder="Item qty." style="width:80px; height:30px"></td>
-                    <td><input type="submit" value="add to cart" class="btn1"></td>
-                  </tr>
-                </table>
-                
-                
-            </div>
-        </div>
-      </form>
-        @endforeach
-    </section>
-                       {{-- footer section --}}
+
+
+
+       {{-- footer section --}}
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6597"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1"> All rights reserved © 2022&nbsp; myBakery</p>
       </div>

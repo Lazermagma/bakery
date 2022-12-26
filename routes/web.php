@@ -42,7 +42,11 @@ Route::middleware([
 });
 
 Route::post('/addcart/{id}', [HomeController::class, "addcart"]);
+
+Route::get('/showcart/{id}', [HomeController::class, "showcart"]);
+
 //admin routes
+
 Route::get('/users', [AdminController::class, "user"]);
 Route::get('/Bakery-Menu', [AdminController::class, "BakeryMenu"]);
 Route::get('/deleteuser/{id}', [AdminController::class, "deleteuser"]);

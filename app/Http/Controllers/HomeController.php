@@ -90,7 +90,12 @@ public function addcart(Request $request,$id){
     }
 }
 
+public function showcart(Request $request,$id){
 
+    $user_id = Auth::id();
+            $count = Cart::where('user_id', $user_id)->count();
+        return view('showcart',compact('count'));
+}
 
 }
 
