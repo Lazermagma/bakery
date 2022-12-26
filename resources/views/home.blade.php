@@ -68,11 +68,24 @@
                  }
       </style>
       <table class="cart-color">
-         <tr> 
-          <td><i class="fa-solid fa-cart-shopping" "></i></td>
-          <td><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" href="{{asset('/Contact-Us')}}" style="padding: 10px 5px 10px 8px; ">Cart[{{$count}}]</a></td>
-         </tr>
-        </table>
+        <tr> 
+         <td><i class="fa-solid fa-cart-shopping" "></i></td>
+         <td><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-grey-90" href="{{asset('/Contact-Us')}}" style="padding: 10px 5px 10px 8px; ">
+           
+           @auth
+         
+           Cart[{{$count}}]
+           @endauth
+         @guest
+           Cart[0]
+         @endguest
+         
+         
+         </a>
+         
+         </td>
+        </tr>
+       </table>
       
   
     </li>
@@ -111,6 +124,41 @@
     </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{asset('/menu')}}">Menu</a>
     </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{asset('/our-blog')}}">Blog</a>
     </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{asset('/Contact-Us')}}">Contact Us</a>
+    </li>
+    <li class="u-nav-item" style="">
+      
+  
+      <style>
+                 .cart-color:hover{
+                   color: orange;
+                 }
+                 .cart-color{
+                   font-weight: 500;
+                  
+                 }
+                
+      </style>
+      <table class="cart-color">
+        <tr> 
+         <td><i class="fa-solid fa-cart-shopping" "></i></td>
+         <td><a class="u-button-style u-nav-link" style="padding: 10px 5px 10px 8px;  ">
+           
+           @auth
+         
+           Cart[{{$count}}]
+           @endauth
+         @guest
+           Cart[0]
+         @endguest
+         
+         
+         </a>
+         
+         </td>
+        </tr>
+       </table>
+      
+  
     </li>
     
     <li> 
