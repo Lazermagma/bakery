@@ -1,3 +1,5 @@
+
+<base href="/public">
 <link rel="stylesheet" href="{{asset('nicepage.css')}}" media="screen">
     <link rel="stylesheet" href="{{asset('about-Us.css')}}" media="screen">
     <link rel="stylesheet" href="bakeryMenu/style.css">
@@ -191,8 +193,19 @@
           </p>
       </div></header>
        {{-- ---------------End of navbar section----------------- --}}
+
+
+       <style>
+
+    .table-style{
+        position: relative;
+        left: 400px;
+        border: 2px solid;
+        background-color: rgb(251, 251, 251);
+    }
+       </style>
 <section>
-    <table align="center" bgcolor="beige" >
+    <table class="table-style" >
     
         <tr>
             <th  style="padding: 30px;">Name</th>
@@ -206,8 +219,10 @@
         <td style="padding: 30px;">{{$data->title}}</td>
         <td style="padding: 30px;">{{$data->price}}</td>
         <td style="padding: 30px;">{{$data->quantity}}</td>
-        <td style="padding: 30px; width:100px; height:100px;">
-            <img src="menuImage/{{$data->image}}">
+        <td style="padding: 30px; width:200px; height:200px;">
+             <img src="menuImage/{{$data->image}}" alt="img"> 
+             
+           
         </td>
     </tr>
         
