@@ -270,19 +270,20 @@
              
            
         </td>
-        
-           
-         <div>
-             
-
-
-
-         </div>
 
 
         @endforeach
       
     </tr>
+@foreach ($data2 as $data2 )
+  
+
+    <tr style="position: float; right:-345px ;bottom:300px"> 
+         <td style="position: relative; bottom: 60px; right:-360px; padding :10px">
+          <a href="{{url('/remove',$data2->id)}}" class="btn"> Remove</a>
+         </td>
+    </tr>
+    @endforeach
     </table>
 
 
