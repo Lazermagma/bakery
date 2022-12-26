@@ -12,8 +12,10 @@ use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
     public function index(){
-        
-        return view("home");
+
+        $user_id = Auth::id();
+        $count = Cart::where('user_id', $user_id)->count();
+        return view("home",compact('count'));
     }
 
     public function about(){
@@ -30,7 +32,9 @@ class HomeController extends Controller
 
     public function menu(){
         $data = Menu::all();
-        return view("menu",compact("data"));
+        $user_id = Auth::id();
+        $count = Cart::where('user_id', $user_id)->count();
+        return view("menu",compact("data","count"));
     }
 
     public function blogs_data(){
@@ -46,7 +50,12 @@ class HomeController extends Controller
             return view('admin.adminhome');
         }
         else{
-            return view('home');
+
+            $user_id = Auth::id();
+            $count = Cart::where('user_id', $user_id)->count();
+
+
+            return view('home',compact('count'));
         }
     }
 
