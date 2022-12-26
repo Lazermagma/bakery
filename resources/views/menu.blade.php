@@ -114,7 +114,7 @@
         </div>
         @foreach ($data as $data)
             
-        <form action="{{url('/addcart')}}" method="post">
+        <form action="{{url('/addcart',$data->id)}}" method="post">
           @csrf
         <div class="food-items">
             <img src="menuimage/{{$data->image}}">
@@ -127,7 +127,7 @@
                 
                 <table>
                   <tr>
-                    <td><input type="number" name="quality" min="0" placeholder="Item qty." style="width:80px; height:30px"></td>
+                    <td><input type="number" name="quantity" min="1"  value="1" placeholder="Item qty." style="width:80px; height:30px"></td>
                     <td><input type="submit" value="add to cart" class="btn1"></td>
                   </tr>
                 </table>

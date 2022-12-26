@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\blog;
+use App\Models\Cart;
 use App\Models\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -49,12 +50,20 @@ class HomeController extends Controller
         }
     }
 
-public function addcart(){
+public function addcart(Request $request,$id){
 
     if(Auth::id()){
 
             $user_id = Auth::id();
-            dd($user_id);
+            $foodid = $id;
+            $quantity = $request->quantity;
+
+            $cart = new Cart;
+            $cart->user_id = $user_id;
+            $cart->food_id = $foodid;
+            $cart->quantity = $quantity;
+
+            $cart->save();
 
             return redirect()->back();
     }
