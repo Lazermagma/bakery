@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="{{asset('nicepage.css')}}" media="screen">
     <link rel="stylesheet" href="{{asset('about-Us.css')}}" media="screen">
     <link rel="stylesheet" href="bakeryMenu/style.css">
+    
    
     <script class="u-script" type="text/javascript" src="{{asset('jquery.js')}}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{{asset('nicepage.js')}}" defer=""></script>
@@ -195,8 +196,7 @@
        {{-- ---------------End of navbar section----------------- --}}
 
 
-       <style>
-
+<style>
     .table-style{
         position: relative;
         left: 400px;
@@ -205,8 +205,49 @@
         padding: 10px;
         margin-bottom: 100px;
     }
-       </style>
-<section>
+
+     .btn{
+	display: inline-black;
+	 background: #f9b700;
+	 font-size: 1.1rem;
+     font-family: Arial, Helvetica, sans-serif;
+	 letter-spacing: 1px;
+	 
+	 font-weight: 600;
+	 border: 4px solid transparent;
+	 border-radius: 10px;
+	 width: 220px;
+	 transition: ease .20s;
+	 cursor: pointer;
+}		
+    .btn:hover{
+	border: 4px solid #f9b700;
+    color: #f9b700;
+	background: transparent;
+	transform: scale(1.1);
+}
+  .table-style2{
+    position: relative;
+        left: 400px;
+        border: 2px solid;
+        bottom:605px;
+        padding: 10px;
+        margin-bottom: 100px;
+
+  }
+
+
+</style>
+  
+
+
+
+
+
+
+
+
+ <section>
 
     <h1 align="center"> &mdash;Your cart&mdash;</h1>
     <table class="table-style" >
@@ -216,23 +257,38 @@
             <th style="padding: 30px;">Price</th>
             <th style="padding: 30px;">Quantity</th>
             <th style="padding: 30px;">Image</th>
+            <th style="padding: 30px;">Action</th>
         </tr>
-    @foreach ($data as $data )
+    @foreach ($data as $data)
 
     <tr>
-        <td style="padding: 30px;">{{$data->title}}</td>
-        <td style="padding: 30px;">{{$data->price}}</td>
-        <td style="padding: 30px;">{{$data->quantity}}</td>
+        <td style="padding: 30px;height:200px;">{{$data->title}}</td>
+        <td style="padding: 30px;height:200px;">{{$data->price}}</td>
+        <td style="padding: 30px; height:200px;">{{$data->quantity}}</td>
         <td style="padding: 30px; width:200px; height:200px;">
              <img src="menuImage/{{$data->image}}" alt="img"> 
              
            
         </td>
-    </tr>
         
-    @endforeach
+           
+         <div>
+             
+
+
+
+         </div>
+
+
+        @endforeach
+      
+    </tr>
     </table>
-</section>
+
+
+    
+
+</section> 
 
 
 
