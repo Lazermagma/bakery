@@ -202,9 +202,13 @@
         left: 400px;
         border: 2px solid;
         background-color: rgb(251, 251, 251);
+        padding: 10px;
+        margin-bottom: 100px;
     }
        </style>
 <section>
+
+    <h1 align="center"> &mdash;Your cart&mdash;</h1>
     <table class="table-style" >
     
         <tr>
